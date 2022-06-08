@@ -1,0 +1,25 @@
+import "./styles.css";
+import react from "react"
+export default function App() {
+ return react.createElement("div",null,
+ react.createElement("div" ,null,123),
+ react.createElement(
+   "a",
+ {
+   href : "https://webwhiteboard.com/",
+   className : "yellow",
+
+ },
+ "webwhite"
+ )
+ 
+ );
+ 
+  // return (
+  //   <div className="App">
+  //     <h1>Hello CodeSandbox</h1>
+  //     <h2>Start editing to see some magic happen!</h2>
+  //     <a href = "https://webwhiteboard.com/">Hello</a>
+  //   </div>
+  // );
+}
