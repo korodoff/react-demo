@@ -1,6 +1,6 @@
 const Message = () =>{
     return(
-        <h1>Krut</h1>
+        <h1>creating component</h1>
     );
 }
 
