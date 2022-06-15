@@ -1,17 +1,18 @@
-import "./component/handsOn1/style.css"
-import './App.css';
-import FunctionComponent from "./component/handsOn1/functionComponent";
-import React, {useState} from "react";
-import ClassComponent from "./component/handsOn1/classComponent";
+// import "./component/handsOn1/style.css"
+// import './App.css';
+// import FunctionComponent from "./component/handsOn1/functionComponent";
+// import React, {useState} from "react";
+// import ClassComponent from "./component/handsOn1/classComponent";
+import FormFucntion from "./component/handsOn2/formFunction";
 
 
 function App() {
 
-  const [show, setShow] = useState(false)
-  const[showSecond, setShowSecond] = useState(false)
+  // const [show, setShow] = useState(false)
+  // const[showSecond, setShowSecond] = useState(false)
   return (
     <div className="App">
-      <h3>styling using functional and class component</h3>
+      {/* <h3>styling using functional and class component</h3>
       <div className="flex">
         
          <div className="both" onClick={()=>setShow(!show)}>to style using function component</div>
@@ -30,7 +31,9 @@ function App() {
               <ClassComponent/>
             </div>:null  }
         </div>       
-      </div>
+      </div> */}
+
+      <FormFucntion/>
      
     </div>
   );
