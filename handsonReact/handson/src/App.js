@@ -3,13 +3,19 @@
 // import FunctionComponent from "./component/handsOn1/functionComponent";
 // import React, {useState} from "react";
 // import ClassComponent from "./component/handsOn1/classComponent";
-import FormFucntion from "./component/handsOn2/formFunction";
+
+// import FormFucntion from "./component/handsOn2/formFunction";
+import MainForm from "./component/handsOn2/mainform";
+
+
 
 
 function App() {
-
+  
   // const [show, setShow] = useState(false)
   // const[showSecond, setShowSecond] = useState(false)
+
+
   return (
     <div className="App">
       {/* <h3>styling using functional and class component</h3>
@@ -33,10 +39,13 @@ function App() {
         </div>       
       </div> */}
 
-      <FormFucntion/>
+      <MainForm/>
+      {/* <FormFucntion/> */}
+      
      
     </div>
   );
+    
 }
 
 export default App;

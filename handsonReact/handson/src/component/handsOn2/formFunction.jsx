@@ -1,22 +1,7 @@
-import React, { useState } from "react";
-
-function FormFucntion() {
-  const [inputValue, setInputValue] = useState({
-    Name: "",
-    Department: "",
-    Rating: "",
-  });
-
-  const handleInput = (e) => {
-    const value = e.target.value;
-    setInputValue({
-      ...inputValue,
-      [e.target.name]: value,
-    });
-  };
+function FormFucntion(handleInput, inputValue, onsubmit) {
   return (
     <>
-      <form>
+      <form onSubmit={onsubmit}>
         <h1>Employee Feedback form</h1>
         <label htmlFor="Name">Name:</label>
         <input

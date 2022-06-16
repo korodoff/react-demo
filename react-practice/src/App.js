@@ -17,6 +17,8 @@ import AboutUs from "./component/day5/aboutUs";
 import Contact from "./component/day5/contact";
 import NotFound from "./component/day5/notFound";
 import NavagationBar from "./component/day5/navagationBar";
+import RoutingParams from "./component/day6/routingParams";
+import SearchParams from "./component/day6/searchParams";
 // import { useState } from 'react';
 // import LifeCycleMethods from './component/day4/lifeCyclemethod';
 
@@ -76,6 +78,9 @@ function App() {
        <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/electronic/:appliance" element={<RoutingParams/>}/>
+        <Route path="/cars" element={<SearchParams/>}/>
+
         <Route path="/AboutUs" element={<AboutUs/>}/>
         <Route path="*" element={<NotFound/>}/>
        </Routes>
