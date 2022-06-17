@@ -3,9 +3,10 @@
 // import FunctionComponent from "./component/handsOn1/functionComponent";
 // import React, {useState} from "react";
 // import ClassComponent from "./component/handsOn1/classComponent";
+import "./component/handsOn2/hs2style.css"
 
-// import FormFucntion from "./component/handsOn2/formFunction";
-import MainForm from "./component/handsOn2/mainform";
+import FormFucntion from "./component/handsOn2/formFunction";
+// import MainForm from "./component/handsOn2/mainform";
 
 
 
@@ -39,8 +40,8 @@ function App() {
         </div>       
       </div> */}
 
-      <MainForm/>
-      {/* <FormFucntion/> */}
+      {/* <MainForm/> */}
+      <FormFucntion/>
       
      
     </div>

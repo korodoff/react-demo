@@ -1,10 +1,14 @@
 import React from "react";
 
-function Displayform(displayData) {
-  console.log(displayData.name);
+function Displayform(props) {
+  const { kyrteng, department, rating } = props;
+  console.log(kyrteng);
+
   return (
-    <div>
-      <h1>hello</h1>
+    <div className="cardDisplay">
+      <h3>
+        Name:{kyrteng}|Department:{department}|Rating:{rating}
+      </h3>
     </div>
   );
 }
