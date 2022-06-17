@@ -9,17 +9,18 @@
 // import ConditionalRendering from './component/day3/conditionalRendering.jsx';
 // import { useState } from 'react';
 // import lifeCycleComponent from './component/day4/lifeCyclemethod';
-import{BrowserRouter, Routes, Route} from "react-router-dom"
+// import{BrowserRouter, Routes, Route} from "react-router-dom"
 
 import './App.css';
-import Home from "./component/day5/home";
-import AboutUs from "./component/day5/aboutUs";
-import Contact from "./component/day5/contact";
-import NotFound from "./component/day5/notFound";
-import NavagationBar from "./component/day5/navagationBar";
-import RoutingParams from "./component/day6/routingParams";
-import SearchParams from "./component/day6/searchParams";
-// import { useState } from 'react';
+// import Home from "./component/day5/home";
+// import AboutUs from "./component/day5/aboutUs";
+// import Contact from "./component/day5/contact";
+// import NotFound from "./component/day5/notFound";
+// import NavagationBar from "./component/day5/navagationBar";
+// import RoutingParams from "./component/day6/routingParams";
+// import SearchParams from "./component/day6/searchParams";
+import UseEffectComponent from "./component/day7/useEffectComponent";
+import { useState } from 'react';
 // import LifeCycleMethods from './component/day4/lifeCyclemethod';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
   //   setCounters(copyCounter);
   // };
 
-  // const [lifeCycleComponent , setLifeCycleComponent] = useState(true)
+  const [lifeCycleComponent , setLifeCycleComponent] = useState(true)
   return (
     <div className="App">
      {/* <h1>HEllO Welcome to react</h1>
@@ -73,7 +74,7 @@ function App() {
         </button>      
        */}
 
-       <BrowserRouter>
+       {/* <BrowserRouter>
        <NavagationBar/>
        <Routes>
         <Route path="/" element={<Home/>}/>
@@ -84,7 +85,11 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs/>}/>
         <Route path="*" element={<NotFound/>}/>
        </Routes>
-       </BrowserRouter>
+       </BrowserRouter> */}
+       {lifeCycleComponent? <UseEffectComponent/> :null}
+       <button onClick={() => setLifeCycleComponent(!lifeCycleComponent)}>
+        show/hide LifeCycle Component
+        </button>   
 
     </div>
   );
