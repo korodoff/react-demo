@@ -40,3 +40,11 @@ input{
     border-radius: 30px;
     margin: 5px;
 }
+.btn{
+    font-size: 1em;
+    
+    margin: 5px;
+    background-color: rgb(185, 228, 247);
+
+    border-radius: 20px;
+}

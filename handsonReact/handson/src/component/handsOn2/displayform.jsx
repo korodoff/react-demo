@@ -5,11 +5,18 @@ function Displayform(props) {
   console.log(kyrteng);
 
   return (
-    <div className="cardDisplay">
-      <h3>
-        Name:{kyrteng}|Department:{department}|Rating:{rating}
-      </h3>
-    </div>
+    <>
+      <div className="cardDisplay">
+        <h3>
+          Name:{kyrteng}|Department:{department}|Rating:{rating}
+        </h3>
+      </div>
+      <div>
+        <button className="btn" onClick={props.togglefunction}>
+          onClick
+        </button>
+      </div>
+    </>
   );
 }
 
