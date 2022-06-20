@@ -19,10 +19,18 @@ import './App.css';
 // import NavagationBar from "./component/day5/navagationBar";
 // import RoutingParams from "./component/day6/routingParams";
 // import SearchParams from "./component/day6/searchParams";
-import UseEffectComponent from "./component/day7/useEffectComponent";
-import { useState } from 'react';
+// import UseEffectComponent from "./component/day7/useEffectComponent";
+// import { useState } from 'react';
 // import LifeCycleMethods from './component/day4/lifeCyclemethod';
 
+
+import {useState, createContext} from "react"
+import ComptAContext from './component/day8/context/comptAcontext';
+
+export const FirstName = createContext();
+export const LastName = createContext();
+export const MiddleName = createContext();
+export const CounterContext = createContext();
 function App() {
   // const fruits = ["apple","banana","orange"]
   // const people = [
@@ -38,7 +46,11 @@ function App() {
   //   setCounters(copyCounter);
   // };
 
-  const [lifeCycleComponent , setLifeCycleComponent] = useState(true)
+  // const [lifeCycleComponent , setLifeCycleComponent] = useState(true)
+  const [counter,serCounter] = useState(0);
+  const handleIncrement = () =>{
+    serCounter(counter + 1);
+  }  
   return (
     <div className="App">
      {/* <h1>HEllO Welcome to react</h1>
@@ -86,10 +98,22 @@ function App() {
         <Route path="*" element={<NotFound/>}/>
        </Routes>
        </BrowserRouter> */}
-       {lifeCycleComponent? <UseEffectComponent/> :null}
+       {/* {lifeCycleComponent? <UseEffectComponent/> :null}
        <button onClick={() => setLifeCycleComponent(!lifeCycleComponent)}>
         show/hide LifeCycle Component
-        </button>   
+        </button>    */}
+
+
+        <FirstName.Provider value={"korodoff"}>
+          <LastName.Provider value={"Malkov"}>
+          <MiddleName.Provider value={"krut"}>
+            <CounterContext.Provider value={{counter,handleIncrement}}>
+            <ComptAContext/>
+            </CounterContext.Provider>
+          </MiddleName.Provider>
+          </LastName.Provider>
+        </FirstName.Provider>
+
 
     </div>
   );
