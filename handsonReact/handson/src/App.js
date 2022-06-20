@@ -3,10 +3,16 @@
 // import FunctionComponent from "./component/handsOn1/functionComponent";
 // import React, {useState} from "react";
 // import ClassComponent from "./component/handsOn1/classComponent";
-import "./component/handsOn2/hs2style.css"
+// import "./component/handsOn2/hs2style.css"
 
-import FormFucntion from "./component/handsOn2/formFunction";
+// import FormFucntion from "./component/handsOn2/formFunction";
 // import MainForm from "./component/handsOn2/mainform";
+import{BrowserRouter, Routes, Route} from "react-router-dom"
+import Home from "./component/handson3/home"
+import Contact from "./component/handson3/contact"
+import Student from "./component/handson3/student"
+import NavBar from "./component/handson3/navBar"
+
 
 
 
@@ -41,7 +47,19 @@ function App() {
       </div> */}
 
       {/* <MainForm/> */}
-      <FormFucntion/>
+      {/* <FormFucntion/> */}
+
+
+
+      <BrowserRouter>
+      <NavBar/>
+       <Routes>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/student" element={<Student/>}/>
+       </Routes>
+       </BrowserRouter>
+
       
      
     </div>
