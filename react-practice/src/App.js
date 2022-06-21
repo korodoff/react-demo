@@ -12,6 +12,8 @@
 // import{BrowserRouter, Routes, Route} from "react-router-dom"
 
 import './App.css';
+import ComponentPure from './component/day9/pureComponent';
+// import ControlComp from './component/day9/controlComp';
 // import Home from "./component/day5/home";
 // import AboutUs from "./component/day5/aboutUs";
 // import Contact from "./component/day5/contact";
@@ -24,13 +26,13 @@ import './App.css';
 // import LifeCycleMethods from './component/day4/lifeCyclemethod';
 
 
-import {useState, createContext} from "react"
-import ComptAContext from './component/day8/context/comptAcontext';
+// import {useState, createContext} from "react"
+// import ComptAContext from './component/day8/context/comptAcontext';
 
-export const FirstName = createContext();
-export const LastName = createContext();
-export const MiddleName = createContext();
-export const CounterContext = createContext();
+// export const FirstName = createContext();
+// export const LastName = createContext();
+// export const MiddleName = createContext();
+// export const CounterContext = createContext();
 function App() {
   // const fruits = ["apple","banana","orange"]
   // const people = [
@@ -47,10 +49,10 @@ function App() {
   // };
 
   // const [lifeCycleComponent , setLifeCycleComponent] = useState(true)
-  const [counter,serCounter] = useState(0);
-  const handleIncrement = () =>{
-    serCounter(counter + 1);
-  }  
+  // const [counter,serCounter] = useState(0);
+  // const handleIncrement = () =>{
+  //   serCounter(counter + 1);
+  // }  
   return (
     <div className="App">
      {/* <h1>HEllO Welcome to react</h1>
@@ -104,7 +106,7 @@ function App() {
         </button>    */}
 
 
-        <FirstName.Provider value={"korodoff"}>
+        {/* <FirstName.Provider value={"korodoff"}>
           <LastName.Provider value={"Malkov"}>
           <MiddleName.Provider value={"krut"}>
             <CounterContext.Provider value={{counter,handleIncrement}}>
@@ -112,9 +114,21 @@ function App() {
             </CounterContext.Provider>
           </MiddleName.Provider>
           </LastName.Provider>
-        </FirstName.Provider>
+        </FirstName.Provider> */}
 
 
+
+        {/* <div>
+          <ControlComp/>
+        </div> */}
+
+
+        <div>
+          <ComponentPure/>
+        </div>
+
+
+        
     </div>
   );
 }
