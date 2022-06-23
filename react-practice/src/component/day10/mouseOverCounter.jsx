@@ -1,17 +1,15 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
+import CounterHOC from "./counterHOC";
 
-const MouseOverCounter = () => {
-  const [counter, setCounter] = useState;
-  const handleCounterIncrement = () => {
-    setCounter(counter + 1);
-  };
+const MouseOverCounter = (props) => {
+  const { counter, handleIncrement } = props;
   return (
     <>
-      <h1>MouseOverCounter Counter: {counter}</h1>
-      <button onClick={handleCounterIncrement}>MouseOverCounter</button>
+      <h1 onMouseOver={handleIncrement}>MouseOverCounter Counter: {counter}</h1>
     </>
   );
 };
 
-export default MouseOverCounter;
+const EnhanceOverCounter = CounterHOC(MouseOverCounter, 3);
+export default EnhanceOverCounter;
