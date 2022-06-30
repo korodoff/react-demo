@@ -12,7 +12,10 @@
 // import{BrowserRouter, Routes, Route} from "react-router-dom"
 
 import './App.css';
-import ComponentPure from './component/day9/pureComponent';
+// import ClickCounter from './component/day10/clickCounter';
+// import MouseOverCounter from './component/day10/mouseOverCounter';
+// import RightClickCounter from './component/day10/rightClickCounter';
+// import ComponentPure from './component/day9/pureComponent';
 // import ControlComp from './component/day9/controlComp';
 // import Home from "./component/day5/home";
 // import AboutUs from "./component/day5/aboutUs";
@@ -123,10 +126,16 @@ function App() {
         </div> */}
 
 
-        <div>
+        {/* <div>
           <ComponentPure/>
-        </div>
+        </div> */}
 
+      {/* <div>
+        <ClickCounter/>
+        <RightClickCounter/>
+        <MouseOverCounter/>
+
+      </div> */}
 
         
     </div>
