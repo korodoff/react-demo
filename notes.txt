@@ -1,0 +1,20 @@
+npx create-react-app my-app
+cd my-app
+npm start
+*******************************************************
+npm install react-router-dom
+********************************************************
+npm i axios
+
+
+https://insachasses6.netlify.app/student
+
+https://youtu.be/1oU_YGhT7ck  (redux)
+
+https://github.com/Saikatsamanta-glitch
+
+saikatsamanta052@gmail.com
+
+
+
+

@@ -1,0 +1,27 @@
+Stateful components are those components which have a state
+
+
+Stateless components are those components which don’t have any state at all
+
+A stateless component can render props, whereas a stateful component can render both props and state
+Stateful components can use react life cycle hooks
+Stateless components can not use the react life cycle hooks
+In some component, the data keeps changing, for example, watching the cricket score etc.
+In some component, the data remains the same, for example, showing the static data.
+
+
+
+
+
+What is React?
+React is an open-source front-end JavaScript library that is used for building user interfaces, especially for single-page applications. It is used for handling view layer for web and mobile apps. React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.
+
+⬆ Back to Top
+
+What are the major features of React?
+The major features of React are:
+
+It uses VirtualDOM instead of RealDOM considering that RealDOM manipulations are expensive.
+Supports server-side rendering.
+Follows Unidirectional data flow or data binding.
+Uses reusable/composable UI components to develop the view.

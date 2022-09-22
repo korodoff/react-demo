@@ -9,7 +9,7 @@
 // import ConditionalRendering from './component/day3/conditionalRendering.jsx';
 // import { useState } from 'react';
 // import lifeCycleComponent from './component/day4/lifeCyclemethod';
-// import{BrowserRouter, Routes, Route} from "react-router-dom"
+import{BrowserRouter, Routes, Route} from "react-router-dom"
 
 import './App.css';
 // import ClickCounter from './component/day10/clickCounter';
@@ -138,6 +138,16 @@ function App() {
       </div> */}
 
         
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/" element={<Contact/>}/>
+
+      </Routes>
+      
+      </BrowserRouter>
+
+
     </div>
   );
 }
